@@ -4,7 +4,7 @@ Vue3 + TS
 
 - Ant Design of Vue(组件)
 - Pinia(状态管理库)
-- Webpack
+- Webpack5
 
 ## Project setup
 
