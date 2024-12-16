@@ -10,32 +10,28 @@ module.exports = {
     },
   },
 
-  extends: [
-    'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  extends: ['plugin:vue/vue3-recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   plugins: ['vue'],
 
   rules: {
-    // camelcase: ["error", { allow: ["access_token", "grant_type"] }],
-    // eqeqeq: "error",
-    quotes: ['error', 'double', { allowTemplateLiterals: true }],
-    indent: ['error', 2],
+    // camelcase: ["warn", { allow: ["access_token", "grant_type"] }],
+    // eqeqeq: "warn",
+    // quotes: ['warn', 'double', { allowTemplateLiterals: true }],
+    indent: ['warn', 2],
     'no-empty-pattern': 'off',
     'no-debugger': 'off',
     'no-console': 'off', // 允许有console
-    'no-alert': rule,
-    'no-unreachable': rule,
+    // 'no-alert': rule,
+    // 'no-unreachable': rule,
     'sort-keys': 'off',
     'no-empty-function': 'off',
     'capitalized-comments': 'off',
-    'linebreak-style': 'error',
+    'linebreak-style': 'warn',
     'quote-props': 'off',
     'linebreak-style': 'off',
     'multiline-comment-style': 'off',
     'comma-dangle': [
-      'error',
+      'warn',
       {
         arrays: 'only-multiline',
         objects: 'only-multiline',
@@ -44,10 +40,10 @@ module.exports = {
         functions: 'never',
       },
     ],
-    'object-curly-spacing': ['error', 'always'],
-    'padded-blocks': ['error', 'never'],
-    'space-before-function-paren': ['error', 'never'],
-    'max-len': ['error', 200],
+    'object-curly-spacing': ['warn', 'always'],
+    'padded-blocks': ['warn', 'never'],
+    // 'space-before-function-paren': ['warn', 'never'],
+    'max-len': ['warn', 200],
     'sort-imports': 'off',
     'id-length': 'off',
     'prefer-named-capture-group': 'off',
@@ -63,7 +59,7 @@ module.exports = {
     'no-magic-numbers': 'off',
     'no-negated-condition': 'off',
     'implicit-arrow-linebreak': 'off',
-    'no-unused-vars': 'warn',
+    // 'no-unused-vars': 'warn',
     'vue/this-in-template': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/require-component-is': 'off',
@@ -73,6 +69,12 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 'off',
     'vue/attribute-hyphenation': 'off', // 关闭props只能是kebab-case的提示
     'vue/html-self-closing': 'off', // 和format不同，先关闭
-    'vue/no-parsing-error': 'off', // 关闭 {{ < }} 中 小于号检测错误
+    'vue/no-parsing-warn': 'off', // 关闭 {{ < }} 中 小于号检测错误
+    'vue/multi-word-component-names': [
+      'warn',
+      {
+        ignores: ['index'],
+      },
+    ],
   },
 };

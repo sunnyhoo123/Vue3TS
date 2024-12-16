@@ -7,6 +7,7 @@ const loading = ref(false);
 
 // 可以直接侦听一个 ref
 watch(question, async (newQuestion, oldQuestion) => {
+  console.log(oldQuestion);
   if (newQuestion.includes('?')) {
     loading.value = true;
     answer.value = 'Thinking...';
