@@ -5,6 +5,7 @@ import { RouterLink, RouterView } from 'vue-router';
 <template>
   <RouterLink to="/vuePlay">vueplay</RouterLink>
   <RouterLink to="/childAndSon">childAndSon</RouterLink>
+  <RouterLink to="/dynamicComponent">dynamicComponent</RouterLink>
   <RouterView></RouterView>
 </template>
 

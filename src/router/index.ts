@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 import Home from '@/pages/vueUse.vue';
 import VuePlay from '@/pages/vuePlay/index.vue';
+import DynamicComponent from '@/pages/dynamicComponent/index.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,6 +14,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/vuePlay',
     name: 'VuePlay',
     component: VuePlay,
+  },
+  {
+    path: '/dynamicComponent',
+    name: 'DynamicComponent',
+    component: DynamicComponent,
   },
 ];
 

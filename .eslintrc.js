@@ -59,7 +59,8 @@ module.exports = {
     'no-magic-numbers': 'off',
     'no-negated-condition': 'off',
     'implicit-arrow-linebreak': 'off',
-    // 'no-unused-vars': 'warn',
+    'no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': 'off',
     'vue/this-in-template': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/require-component-is': 'off',
@@ -70,6 +71,7 @@ module.exports = {
     'vue/attribute-hyphenation': 'off', // 关闭props只能是kebab-case的提示
     'vue/html-self-closing': 'off', // 和format不同，先关闭
     'vue/no-parsing-warn': 'off', // 关闭 {{ < }} 中 小于号检测错误
+    '@typescript-eslint/no-explicit-any': ['off'],
     'vue/multi-word-component-names': [
       'warn',
       {

@@ -1,5 +1,4 @@
 <script setup>
-import Son from './son.vue';
 const props = defineProps({
   money: {
     type: Number,
@@ -8,16 +7,14 @@ const props = defineProps({
 });
 const emit = defineEmits(['update:mon']);
 const handleClick = () => {
-  emit('update:mon', 1);
+  emit('update:mon', 2);
 };
 </script>
 
 <template>
   <div class="wrapper">
-    the child
+    the child b
     <a-button @click="handleClick">click</a-button>
-
-    <Son></Son>
   </div>
 </template>
 
