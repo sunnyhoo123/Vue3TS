@@ -1,5 +1,4 @@
 <script setup>
-import Son from './son.vue';
 const props = defineProps({
   money: {
     type: Number,
@@ -16,7 +15,6 @@ const handleClick = () => {
   <div class="wrapper">
     the child b
     <a-button @click="handleClick">click</a-button>
-    <Son></Son>
   </div>
 </template>
 
